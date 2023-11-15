@@ -1,0 +1,26 @@
+.top-posts-container{
+    display:flex;
+    flex-flow: column nowrap;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 2px solid var(--tertiary);
+    margin: 20px 0 20px 0;
+    position: sticky;
+    width: 15vw;
+    box-shadow: 10px 10px 10px var(--primary);
+    border-radius: 9px;
+}
+
+
+.top-posts-title-container {
+    background-color: var(--tertiary);
+}
+
+.top-posts-title {
+    font-size: var(--large);
+}
+
+.top-posts-content-container {
+    display: flex;
+    flex-flow: column wrap;
+}

@@ -1,0 +1,123 @@
+.feed-container {
+    border: 2px solid var(--tertiary);
+    width: 80%;
+    margin: 20px;
+    border-radius: 9px;
+    background-color: var(--secondary);
+    position: relative;
+    top: 20px;
+    box-shadow: 15px 15px 20px var(--primary);
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--tertiary);
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    
+}
+
+#sort-by {
+    margin: 0 20px;
+    font-size: var(--medium);
+}
+
+.sort-button {
+    font-size: var(--small);
+    border: 1px solid var(--secondary);
+    height: 70%;
+    margin: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+.posts-container {
+    /* border: 2px solid var(--tertiary); */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--secondary);
+    position: sticky;
+    top: 200px;
+    
+}
+
+.post-container {
+    width: 90%;
+    border: 2px solid var(--tertiary);
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    font-size: var(--xsmall);
+    background-color: var(--tertiary);
+    box-shadow: 10px 10px 10px var(--secondary);
+}
+
+.post-header {
+    display: inline-flex;
+    align-items: center;
+}
+.post-image{
+    width: 50px;
+    height: 50px;
+}
+.post-user {
+    font-size: var(--xsmall);
+    position: relative;
+    left: 10px;
+}
+
+.post-user-name {
+    position: relative;
+    left: 0;
+}
+
+.post-title {
+    text-align:left;
+    font-size: var(--large);
+    position: relative;
+    left: 10px;
+    color: var(--primary)
+}
+
+.post-title:hover {
+    color: var(--secondary);
+}
+
+.post-footer{
+    position: relative;
+    left: 0px;
+    gap: 465px;
+    border: 1px solid white;
+    display: inline-flex;
+}
+
+.post-upvotes-container {
+    text-align: left;
+    position: relative;
+    left: 10px;
+}
+
+div span .post-time {
+    text-align: right;
+}
+
+@media (width: 200px) {
+    .post-footer {
+        gap: 0;
+    }
+    
+}
+
+
+
+

@@ -1,0 +1,25 @@
+.top-users-container{
+    display: flex;
+    flex-flow: column nowrap;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 2px solid var(--tertiary);
+    margin: 20px 0 20px 0;
+    position: sticky;
+    width: 15vw;
+    box-shadow: 10px 10px 10px var(--primary);
+    border-radius: 9px;
+}
+
+.top-users-title-container {
+    background-color: var(--tertiary);
+}
+
+.top-users-title {
+    font-size: var(--large);
+}
+
+.top-users-content-container {
+    display: flex;
+    flex-flow: column wrap;
+}

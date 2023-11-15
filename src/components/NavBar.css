@@ -1,0 +1,150 @@
+.navbar-container {
+    width: calc(99vw);
+    height: 10vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--tertiary);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.logo-container {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    left: 20px;
+}
+
+
+.logo {
+    /* height: 6em; */
+    /* padding: 1.5em; */
+    height: 50px;
+    width: 50px;
+    will-change: filter;
+    transition: filter 300ms;
+
+    background-color: #DDD;
+    border-radius: 15px;
+    margin: 20px;
+
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+.logo-title {
+    font-size: var(--xxlarge);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+nav {
+    font-size: 20px;
+    position: relative;
+    right: 20px;
+}
+
+nav .nav-elt {
+    margin: 20px;
+    color: var(--tertiary);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #000;
+    border: 1px solid #ccc;
+}
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000;
+  }
+  
+  input:checked + .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round::before {
+    border-radius: 50%;
+  }
+
+  .profile-pic {
+    width: 25px;
+    height: 25px;
+    background-color: var(--tertiary);
+    border-radius: 20px;
+  }
+
+  .profile-id {
+    color: white;
+  }
+
+  .setting-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .search {
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-right: 10px;
+  }
+
+  .search-button {
+    background-color: transparent;
+  }

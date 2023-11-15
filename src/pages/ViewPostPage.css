@@ -1,0 +1,142 @@
+.view-post-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    border: 2px solid var(--tertiary);
+    align-items: flex-start;
+    padding: 0 10px 0;
+    font-size: var(--large);
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    justify-content: center;
+    border-radius: 9px;
+    box-shadow: 15px 15px 20px var(--primary);
+    margin: 0 0 30px 0;
+    
+}
+
+.view-post-header {
+    display: inline-flex;
+    gap: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.view-post-header .profile-pic {
+    background-color: var(--tertiary);
+    border-radius: 20px;
+}
+
+.view-post-header span {
+    font-size: var(--small);
+}
+
+.view-post-title-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    border: 2px solid var(--tertiary);
+    border-radius: 9px;
+}
+
+.view-post-title {
+    font-size: var(--xlarge);
+}
+#title-input {
+    width: 80%;
+    height: 50px;
+    font-size: var(--large);
+    overflow-y: auto;
+}
+
+
+.view-post-description-container{
+    width: 90%;
+    border: 2px solid var(--tertiary);
+    border-radius: 9px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    
+}
+
+.view-post-description {
+    font-size: var(--medium);
+}
+
+
+.view-post-attachment-container {
+    border: 2px solid var(--tertiary);
+    border-radius: 9px;
+}
+
+.view-post-attachment {
+    position: relative;
+    right: 400px;
+}
+
+
+
+.view-post-tags-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.view-post-tags {
+    font-size: var(-xlarge);
+}
+#tags-input {
+    width: 80%;
+    height: 20px;
+    font-size: var(--large);
+}
+
+.question-ref-id {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 255px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+
+.attachments-password {
+    display:flex;
+    flex-flow: row nowrap;
+    gap: 300px;
+    margin: 10px 0;
+}
+
+.view-post-question-or-opinion {
+    text-align:left;
+}
+
+.view-post-attachments {
+    text-align: left;
+    
+}
+
+.view-post-attachment {
+    width: 20%;
+    height: 30%;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 800px;
+}
+
+.upvote {
+    margin: 20px;
+    background-color: transparent;
+    
+}
+
+.comments {
+    margin: 20px;
+}

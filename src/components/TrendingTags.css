@@ -1,0 +1,25 @@
+.trending-tags-container{
+    display:flex;
+    flex-flow: column nowrap;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 2px solid var(--tertiary);
+    margin: 20px 0 20px 0;
+    width: 15vw;
+    box-shadow: 10px 10px 10px var(--primary);
+    border-radius: 9px;
+}
+
+
+.trending-tags-title-container {
+    background-color: var(--tertiary);
+}
+
+.trending-tags-title {
+    font-size: var(--large);
+}
+
+.trending-tags-name-container {
+    display: flex;
+    flex-flow: column wrap;
+}

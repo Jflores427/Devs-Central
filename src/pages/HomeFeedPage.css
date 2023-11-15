@@ -1,0 +1,59 @@
+.home-feed-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 99vw;
+    gap: 30px;
+    
+}
+
+.feed-component-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0 20px;
+    
+}
+
+.widget-container {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 80px;
+    margin: 0px;
+    user-select: none;
+    position: sticky;
+    top: 7em;
+}
+
+
+.next-node {
+ transform: scale(0.7);
+ position: relative;
+ right: 60px;
+}
+
+.current-node{
+    transform: scale(1.2);
+    position: relative;
+    left: 40px;
+}
+
+.previous-node {
+    transform: scale(0.7);
+    position: relative;
+    right: 60px;
+}
+
+.circle-rotate {
+    width: 250px;
+    height: 800px;
+    border: 2px solid white;
+}
+
+.circle-rotate-container {
+    background-color: red;
+
+}
