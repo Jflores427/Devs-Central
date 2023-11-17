@@ -1,29 +1,10 @@
 import "./Feed.css"
 import { Link } from "react-router-dom";
 import supabase from "../../client.js"
+import postTimeElapsed from "../functions/postTimeElapsed.js";
 
 const Feed = (props) => {
     const { filteredPosts, setFilteredPosts, filterResults } = props;
-
-    const postTimeElapsed = (firstDate, secondDate) => {
-        const timeDifferenceInMilli = secondDate - Date.parse(firstDate);
-        const timeDifferenceInSeconds = timeDifferenceInMilli / 1000;
-        const timeDifferenceInMinutes = timeDifferenceInSeconds / 60;
-        const timeDifferenceInHours = timeDifferenceInMinutes / 60;
-        const timeDifferenceInDays = timeDifferenceInHours / 24;
-        const timeDifferenceInWeeks = timeDifferenceInDays / 7;
-        const timeDifferenceInYears = timeDifferenceInWeeks / 52;
-        
-        const timeString = 
-            (timeDifferenceInYears >= 1) ? Math.floor(timeDifferenceInYears) + " Year"  :
-            (timeDifferenceInWeeks >= 1) ? Math.floor(timeDifferenceInWeeks) + " Week" : 
-            (timeDifferenceInDays >= 1) ? Math.floor(timeDifferenceInDays) + " Day" :
-            (timeDifferenceInHours >= 1) ? Math.floor(timeDifferenceInHours) + " Hour" :
-            (timeDifferenceInMinutes >= 1) ? Math.floor(timeDifferenceInDays) + " Minute" :
-            Math.floor(timeDifferenceInSeconds) + " Second";
-        
-         return (parseInt(timeString.split(" ")[0]) > 1) ? timeString + "s" : timeString;
-    };
 
     const sortByNewest = async () => {
         const { data, error } = await supabase.from("Posts").select(`*, Users(*)`).order('created_at', { ascending: false});

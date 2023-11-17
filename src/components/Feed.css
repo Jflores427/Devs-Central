@@ -1,8 +1,9 @@
 .feed-container {
-    border: 2px solid var(--tertiary);
     width: 80%;
     margin: 20px;
-    border-radius: 9px;
+    border: 2px solid var(--tertiary);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
     background-color: var(--secondary);
     position: relative;
     top: 20px;
@@ -46,6 +47,9 @@
     background-color: var(--secondary);
     position: sticky;
     top: 200px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    
     
 }
 
@@ -97,7 +101,6 @@
     position: relative;
     left: 0px;
     gap: 465px;
-    border: 1px solid white;
     display: inline-flex;
 }
 
