@@ -20,6 +20,7 @@ function App() {
             <Route path="/view-post/:id" index={true} element={<ViewPostPage />} />
             <Route path="/view-post/:id/edit" index={true} element={<EditPostPage />} />
           </Route>
+          <Route path="*" element={<h1>Page Not Found</h1>} />
         </Routes>
       </BrowserRouter>
     </>

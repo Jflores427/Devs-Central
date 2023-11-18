@@ -216,16 +216,7 @@ h2 {
   .comment {
     text-align: left;
   }
-
-
-  /* .comments-container span:nth-child(odd) {
-    text-align: left;
-  }
-  .comments-container span:nth-child(even) {
-    text-align: right;
-    position: relative;
-  } */
-
+  
   .comment-input {
     width: 95%;
     border: 1px solid var(--tertiary);

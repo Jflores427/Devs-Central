@@ -6,7 +6,7 @@ This web app: **A web application that allows users to ask questions and post op
 Users are able to view the posts of the fellow users, create/comment/update/delete posts, and have the ability to just interact with others in this forum-like 
 website.**
 
-Time spent: **40** hours spent in total
+Time spent: **42** hours spent in total
 
 ## Required Features
 
@@ -29,7 +29,7 @@ The following **optional** features are implemented:
 - [X] Users can only edit and deleted posts or delete comments by entering the secret key, which is set by the user during post creation
 - [X] Upon launching the web app, the user is assigned a random user ID. It will be associated with all posts and comments that they make and displayed on them.
 - [X] Users can repost a previous post by referencing its post ID. On the post page of the new post, the referenced post is displayed and linked, creating a thread
-- [X] Users can customize the interface of the web app
+- [X] Users can customize the interface of the web app (Dark Mode)
 - [ ] Users can share and view web videos
 - [X] Users can set flags while creating a post. Then users can filter posts by flags on the home feed.
 - [ ] Users can upload images directly from their local machine as an image file
@@ -37,13 +37,16 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+- [X] Implemented a card cycler that changes the position of the cards within the widget Container (TopUsers, TrendingTags, TopPosts)
+
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./public/Devs-Central.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<!-- Imgur Link - https://imgur.com/a/2JoY6jz>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif  
@@ -59,7 +62,7 @@ Describe any challenges encountered while building the app.
 * CSS Styling
 * Supabase Queries (Especially the Sum aggregate function)
 * Re-Rendering of Specific Elements, while excluding others.
-* Overall Design of the website
+* Overall Design of the Website
 
 ## License
 
