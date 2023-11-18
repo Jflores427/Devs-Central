@@ -6,7 +6,11 @@ This web app: **A web application that allows users to ask questions and post op
 Users are able to view the posts of the fellow users, create/comment/update/delete posts, and have the ability to just interact with others in this forum-like 
 website.**
 
+Netlify URL: https://incomparable-semifreddo-c613c3.netlify.app/
+
 Time spent: **42** hours spent in total
+
+
 
 ## Required Features
 
