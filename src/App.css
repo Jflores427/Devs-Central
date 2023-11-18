@@ -7,7 +7,7 @@
 }
 
 #root::-webkit-scrollbar {
-  display: none;
+  visibility: hidden;
 }
 
 

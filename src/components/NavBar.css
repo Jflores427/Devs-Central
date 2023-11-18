@@ -1,16 +1,19 @@
 .navbar-container {
-    width: calc(99vw);
+    width: calc(99.9vw);
     height: 10vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background-color: black;
+    
+    background-color: var(--primary);
     align-items: center;
     border-radius: 5px;
     border: 1px solid var(--tertiary);
-    position: sticky;
+
+    display: relative;
     top: 0px;
     z-index: 2;
+
 }
 
 .logo-container {
@@ -19,7 +22,6 @@
     position: relative;
     left: 20px;
 }
-
 
 .logo {
     /* height: 6em; */
@@ -43,7 +45,7 @@
 
 .logo-title {
     font-size: var(--xxlarge);
-    color: white;
+    color: var(--secondary);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -126,7 +128,7 @@ input:checked + .slider {
   }
 
   .profile-id {
-    color: white;
+    color: var(--secondary);
   }
 
   .setting-container {
@@ -143,6 +145,7 @@ input:checked + .slider {
     border-radius: 20px;
     padding: 0 20px;
     margin-right: 10px;
+    background-color: var(--secondary);
   }
 
   .search-button {

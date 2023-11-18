@@ -4,8 +4,20 @@ span {
 
 h2 {
     font-size: var(--medium);
+    text-shadow: 7px 7px 7px var(--tertiary);
 }
 
+input[type="text"] {
+    border: 1px solid var(--tertiary);
+    border-radius: 9px;
+    margin: 5px 0px;
+}
+
+textarea {
+    border: 1px solid var(--tertiary);
+    border-radius: 9px;
+    margin: 5px 0px;
+}
 fieldset {
     border: 0px;
     margin: -10px;
@@ -30,6 +42,7 @@ fieldset {
 
 .new-post-header {
     font-size: var(--xxlarge);
+    text-shadow: 7px 7px 7px var(--tertiary);
 }
 
 .new-post-title-container{
@@ -85,18 +98,27 @@ fieldset {
 }
 
 .question-ref-id {
+    width: 40%;
     display: flex;
     flex-flow: row nowrap;
-    gap: 255px;
+    justify-content: space-between;
     text-align: left;
     margin: 10px 0;
 }
 
+.new-post-question-or-opinion-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
 
 .attachments-password {
-    display:flex;
+    width: 40%;
+    display: flex;
     flex-flow: row nowrap;
-    gap: 300px;
+    justify-content: space-between;
     margin: 10px 0;
 }
 
@@ -118,6 +140,8 @@ fieldset {
     bottom: 40px;
     right: 30px;
     align-self: flex-end;
+    border: 1px solid var(--tertiary);
+    border-radius: 30px;
 }
 
 input[type=text] {

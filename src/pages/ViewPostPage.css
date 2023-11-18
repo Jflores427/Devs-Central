@@ -177,6 +177,8 @@ h2 {
     display: flex;
     flex-flow: column nowrap;
     overflow-y: auto;
+    visibility: hidden;
+    position: absolute;
   }
 
   .comments-container::-webkit-scrollbar{
@@ -230,3 +232,24 @@ h2 {
     border-radius: 9px;
     margin: 15px 0px;
   }
+
+  .view-post-ref-post {
+    border: 1px solid var(--tertiary);
+    border-radius: 9px;
+    padding: 10px;
+    width: 50%;
+    margin: 0 0px -10px 0;
+  }
+
+  .view-post-ref-post-title{
+      padding: 0px;
+      margin: 0px;
+      color: var(--primary)
+  }
+
+  .view-post-ref-post-title:hover{
+    color: var(--tertiary);
+    cursor: pointer;
+}
+
+

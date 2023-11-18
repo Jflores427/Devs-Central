@@ -33,8 +33,8 @@ const NavBar = (props) => {
             </div>
             
             <div className="search-container">
-                <input type="text" className="search" placeholder="Search for a Post"/>
-                <button type="submit" className="search-button" onClick={filterResults}>🔎</button>
+                <input type="text" className="search" placeholder="Search for a Post" onInput={filterResults}/>
+                {/* <button type="submit" className="search-button" onClick={filterResults}>🔎</button> */}
             </div>
 
             <div className="setting-container">

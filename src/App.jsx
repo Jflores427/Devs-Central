@@ -8,7 +8,7 @@ import ViewPostPage from './pages/ViewPostPage'
 import EditPostPage from './pages/EditPostPage'
 import Home from './pages/Home'
  
-/* tnOozqiS5DvFHkOh */
+
 function App() {
   return (
     <>

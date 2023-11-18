@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    width: 99vw;
+    width: 100vw;
     gap: 30px;
     
 }
@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     margin: 0px 0 20px;
-    
 }
 
 .widget-container {
@@ -25,7 +24,7 @@
     margin: 0px;
     user-select: none;
     position: sticky;
-    top: 7em;
+    top: 20em; 
 }
 
 
@@ -47,7 +46,7 @@
     right: 60px;
 }
 
-.circle-rotate {
+/* .circle-rotate {
     width: 250px;
     height: 800px;
     border: 2px solid white;
@@ -56,4 +55,4 @@
 .circle-rotate-container {
     background-color: red;
 
-}
+} */

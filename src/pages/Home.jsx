@@ -7,6 +7,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 import "./Home.css";
 
+
+
 const Home = () => {
     const [posts, setPosts] = useState([]);
     const [filteredPosts, setFilteredPosts] = useState([]);
@@ -32,19 +34,33 @@ const Home = () => {
         setTopPosts(data);
     };
 
+    const updateTopUsers = async () => {
+        let { data, error } = await supabase.from("Users").select(`user_id, Posts(upvotes)`);
+    
+        for (let user of data) {
+            let total_upvotes = 0;
+            for (let upvoteObj of user.Posts) {
+                total_upvotes += upvoteObj.upvotes;
+            }
+            const {data, error} = await supabase.from("Upvotes").upsert({user_id: user.user_id, total_upvotes: total_upvotes}, { ignoreDuplicates : false });
+        }
+    };
+
     const getTopUsers = async () => {
-        const { data, error } = await supabase.from("Users").select(`user_id, Posts(upvotes)`).limit(5);
+        // updateTopUsers();
+        const {data, error} = await supabase.from("Upvotes").select().order("total_upvotes", {ascending: false}).limit(5); 
         setTopUsers(data);
     };
 
+
+
     const getTrendingTags = async () => {
-        const { data, error } = await supabase.from("Tags").select().limit(5);
+        const { data, error } = await supabase.from("Tags").select().order("num_of_appearance", {ascending: false}).limit(5);
         setTrendingTags(data);
     };
 
     const filterResults = () => {
         const searchBar = document.getElementsByClassName("search")[0];
-        console.log(searchBar.value);
         if(!searchBar.value) {
             setFilteredPosts(posts);
             return;
@@ -59,10 +75,10 @@ const Home = () => {
     useEffect(() => {
          getUsers();
          getPosts();
+         updateTopUsers();
          getTopUsers();
          getTopPosts();
          getTrendingTags();
-         
     }, []);
 
 

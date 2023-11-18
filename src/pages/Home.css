@@ -4,11 +4,7 @@
     justify-content: left;
 }
 
-
 .outlet-container {
     /* overflow-y: scroll; */
 }
 
-.root::-webkit-scrollbar {
-    display: none;
-}

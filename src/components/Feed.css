@@ -1,16 +1,22 @@
 .feed-container {
     width: 80%;
+    height: 80vh;
     margin: 20px;
     border: 2px solid var(--tertiary);
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
     background-color: var(--secondary);
     position: relative;
-    top: 20px;
+    top: 30px;
     box-shadow: 15px 15px 20px var(--primary);
     display: flex;
     flex-flow: column nowrap;
-    min-width: 0;
+    min-width: 250px;
+    overflow-y: auto;
+}
+
+.feed-container::-webkit-scrollbar{
+    display: none;
 }
 
 .button-container {
@@ -22,8 +28,9 @@
     align-items: center;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
-    
+    min-width: 250px;
 }
+
 
 #sort-by {
     margin: 0 20px;
@@ -49,7 +56,7 @@
     top: 200px;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
-    
+    min-width: 250px;
     
 }
 
@@ -64,6 +71,7 @@
     font-size: var(--xsmall);
     background-color: var(--tertiary);
     box-shadow: 10px 10px 10px var(--secondary);
+    min-width: 250px;
 }
 
 .post-header {
@@ -98,10 +106,9 @@
 }
 
 .post-footer{
-    position: relative;
-    left: 0px;
-    gap: 465px;
+    justify-content: space-between;
     display: inline-flex;
+    min-width: 250px;
 }
 
 .post-upvotes-container {
@@ -110,16 +117,17 @@
     left: 10px;
 }
 
-div span .post-time {
-    text-align: right;
+.post-time-container {
+    position: relative;
+    right: 10px;
 }
 
-@media (width: 200px) {
+/* @media (width: 200px) {
     .post-footer {
         gap: 0;
     }
     
-}
+} */
 
 
 
