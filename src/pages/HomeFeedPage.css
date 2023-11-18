@@ -4,7 +4,6 @@
     justify-content: center;
     width: 100vw;
     gap: 30px;
-    
 }
 
 .feed-component-container {
@@ -24,7 +23,7 @@
     margin: 0px;
     user-select: none;
     position: sticky;
-    top: 20em; 
+    top: 8em; 
 }
 
 

@@ -11,12 +11,13 @@ import { faEraser } from "@fortawesome/free-solid-svg-icons";
 import "./ViewPostPage.css"
 
 const ViewPostPage = () => {
-    const [post, setPost] = useState('');
-    const [refPost, setRefPost] = useState('');
+    const [post, setPost] = useState({});
+    const [refPost, setRefPost] = useState({});
     const [comments, setComments] = useState([]);
     const params = useParams();
-    const [posts, filteredPosts, currUser, users, topUsers, topPosts,trendingTags, setUsers, setPosts, setFilteredPosts, filterResults] = useOutletContext();
     const history = useNavigate();
+    const [posts, filteredPosts, currUser, users, topUsers, topPosts,trendingTags, setUsers, setPosts, setFilteredPosts, filterResults] = useOutletContext();
+    
 
     const getPost = async () => {
         const {data, error} = await supabase.from("Posts").select().eq("post_id", params.id);
@@ -132,13 +133,15 @@ const ViewPostPage = () => {
                             </Link>
                         <br/>
         
-                        <span className="view-post-ref-post-description">{refPost.description.substring(0, 256)}....</span>
+                        <span className="view-post-ref-post-description">{(refPost.description !== undefined && refPost.description !== null) ? refPost.description.substring(0, 256) + "..." : null}</span>
                     </div>
-                }
+                }   
+
                     <span className="view-post-description">{post.description}</span>
                 
                     {post.attachments && 
                     <img className="view-post-attachment" src={post.attachments} alt="attachment-photo"></img>}
+
             </div>
 
             <div className="view-post-tags-container">

@@ -61,6 +61,7 @@ const Home = () => {
 
     const filterResults = () => {
         const searchBar = document.getElementsByClassName("search")[0];
+        
         if(!searchBar.value) {
             setFilteredPosts(posts);
             return;

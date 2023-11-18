@@ -50,6 +50,8 @@ const NewPostPage = () => {
         const { postError} = await supabase.from("Posts").insert(data);
 
         history("/");
+        setPosts([...posts])
+        alert(`New Post "${titleInput}" has been created!`);
         
     };
 
